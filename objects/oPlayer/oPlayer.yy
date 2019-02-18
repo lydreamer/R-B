@@ -4,7 +4,26 @@
     "mvc": "1.0",
     "name": "oPlayer",
     "eventList": [
-        
+        {
+            "id": "67dde2c0-e07b-47c8-8a13-ed22e8a29391",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 0,
+            "m_owner": "c59b82ae-d3f2-46e6-8a33-25722d30fef2"
+        },
+        {
+            "id": "900b92e9-9c7b-4d75-bd8b-9fac9ec20cb0",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 3,
+            "m_owner": "c59b82ae-d3f2-46e6-8a33-25722d30fef2"
+        }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,
@@ -16,7 +35,7 @@
     "physicsGroup": 0,
     "physicsKinematic": false,
     "physicsLinearDamping": 0.1,
-    "physicsObject": true,
+    "physicsObject": false,
     "physicsRestitution": 0.1,
     "physicsSensor": false,
     "physicsShape": 1,

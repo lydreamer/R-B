@@ -4,7 +4,16 @@
     "mvc": "1.0",
     "name": "oBluePlain",
     "eventList": [
-        
+        {
+            "id": "abf164ba-5695-472c-bfac-72d98c1ad538",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 0,
+            "m_owner": "56ec7cb0-19b0-4d82-8c80-5334dbabbba4"
+        }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,
