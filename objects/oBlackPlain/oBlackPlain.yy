@@ -2,7 +2,7 @@
     "id": "db2c4c00-d757-44c4-9566-4d73620d383c",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "oBlcckPlain",
+    "name": "oBlackPlain",
     "eventList": [
         
     ],
