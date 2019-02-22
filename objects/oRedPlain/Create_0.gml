@@ -1,3 +1,4 @@
 /// @description Insert description here
 // You can write your code in this editor
-cl=oWorld.RED_;
+cl= RED_;
+type_ =PLAIN_;

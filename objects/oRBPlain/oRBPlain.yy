@@ -4,7 +4,16 @@
     "mvc": "1.0",
     "name": "oRBPlain",
     "eventList": [
-        
+        {
+            "id": "9d54a2ca-ed7b-4f25-9a8b-4370ecf1b2e0",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 0,
+            "m_owner": "06a5148e-96c0-40f3-be6e-30e247cef470"
+        }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,
