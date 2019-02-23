@@ -2,7 +2,7 @@
     "id": "b358cd2f-afb0-434b-a691-dbbbf6762e88",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "oWorld",
+    "name": "oCamera",
     "eventList": [
         {
             "id": "12942efc-c2c4-461a-a30f-49c74214ae55",
@@ -12,6 +12,16 @@
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
             "eventtype": 0,
+            "m_owner": "b358cd2f-afb0-434b-a691-dbbbf6762e88"
+        },
+        {
+            "id": "6d168789-4f8d-4118-81a5-cfe629a3a720",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 3,
             "m_owner": "b358cd2f-afb0-434b-a691-dbbbf6762e88"
         }
     ],

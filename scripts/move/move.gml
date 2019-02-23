@@ -1,8 +1,11 @@
 //gravity
 var v_co_ins = instance_place(x, y+1, all);
-if !(v_co_ins != noone && v_co_ins.type_ == PLAIN_){
+if (!place_meeting(x,y,all) && (v_co_ins == noone || v_co_ins.type_ != PLAIN_)){
 	vsp += global.grv;
-} else {
+} 
+//junp detect
+var v_co_ins = instance_place(x, y+5, all);
+if (v_co_ins != noone && v_co_ins.type_ == PLAIN_){
 	if keyboard_check_pressed(vk_space){
 		vsp = -jumpsp;
 	}
@@ -23,6 +26,10 @@ if hinput != 0 {
 //horizontal collision
 var h_co_ins = instance_place(x+hsp, y, all);
 if( h_co_ins !=noone && h_co_ins.type_ == PLAIN_ && hsp!=0){
+	last_hsp = hsp;//record speed before collide
+	while (place_meeting(x, y , h_co_ins)){//if already collided , separeate them
+		x-= sign(hsp);	
+	}
 	while !(place_meeting(x+ sign(hsp), y , h_co_ins)){
 		x+= sign(hsp);	
 	}
@@ -33,6 +40,10 @@ if( h_co_ins !=noone && h_co_ins.type_ == PLAIN_ && hsp!=0){
 //vertical collision
 var v_co_ins = instance_place(x, y+vsp, all);
 if( v_co_ins != noone && v_co_ins.type_ == PLAIN_ && vsp!=0){
+	last_vsp = vsp;//record speed before collide
+	while (place_meeting(x, y , h_co_ins)){ //if already collided , separeate them
+		x-= sign(vsp);	
+	}
 	while !(place_meeting(x, y + sign(vsp), v_co_ins)){
 		y+= sign(vsp);	
 	}

@@ -250,7 +250,7 @@
             "Key": "b358cd2f-afb0-434b-a691-dbbbf6762e88",
             "Value": {
                 "id": "a62061fa-b899-4402-8080-e5b01be38448",
-                "resourcePath": "objects\\oWorld\\oWorld.yy",
+                "resourcePath": "objects\\oCamera\\oCamera.yy",
                 "resourceType": "GMObject"
             }
         },
