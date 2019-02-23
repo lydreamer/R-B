@@ -47,6 +47,14 @@
             }
         },
         {
+            "Key": "13702881-64f0-4329-8c7c-a13b75a93c4c",
+            "Value": {
+                "id": "f367556e-f06a-45a1-a2a8-6d98e8ece519",
+                "resourcePath": "sprites\\sFrame\\sFrame.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "13d66f10-443d-4468-9de9-8f42af8ab7b8",
             "Value": {
                 "id": "14245606-89cc-4aac-94c9-76425ef39cdf",
@@ -95,6 +103,22 @@
             }
         },
         {
+            "Key": "331ad4ff-2fc1-470b-86a5-96ba786abf38",
+            "Value": {
+                "id": "18a9b670-fc89-4dcd-98df-b50d145210b5",
+                "resourcePath": "objects\\oBlueDrug\\oBlueDrug.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "38c4f875-5297-4fcc-974a-ce82cabdc6d4",
+            "Value": {
+                "id": "579f55f3-b058-4b6f-8e37-629e27a59cf3",
+                "resourcePath": "objects\\oUI\\oUI.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "443b0b10-394a-45f6-8b0d-68348c08cca2",
             "Value": {
                 "id": "fd12635b-01f8-4500-8d5e-e51aad25dd57",
@@ -108,6 +132,14 @@
                 "id": "f61bcefd-1c17-4db3-b746-cc980d288e54",
                 "resourcePath": "views\\4db6f3ca-7072-4a51-8115-f1106bd05231.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "4e15123e-18e7-4ee0-a7db-82857289ade7",
+            "Value": {
+                "id": "0ff6017e-5d90-4587-abfd-bee6702c3e46",
+                "resourcePath": "sprites\\sBlueDrug\\sBlueDrug.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -175,6 +207,14 @@
             }
         },
         {
+            "Key": "914a0c73-2007-44ae-8cec-f1e2d26719d8",
+            "Value": {
+                "id": "d37742e6-fa6c-45d5-be20-5ed1bdb4629a",
+                "resourcePath": "objects\\oRedDrug\\oRedDrug.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "98403c87-4f8e-4bf0-a16a-07de5c4c14cf",
             "Value": {
                 "id": "dc9fe4d6-29f4-4e78-985f-df0c6e4115da",
@@ -212,6 +252,14 @@
                 "id": "a62061fa-b899-4402-8080-e5b01be38448",
                 "resourcePath": "objects\\oWorld\\oWorld.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "ba97a7b6-a185-4263-a82b-db366cd22d79",
+            "Value": {
+                "id": "a869cb73-9a5b-4b68-8bf6-0cec24a83989",
+                "resourcePath": "views\\ba97a7b6-a185-4263-a82b-db366cd22d79.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -255,6 +303,14 @@
             }
         },
         {
+            "Key": "d9dcd9ea-0b79-4ab2-9d80-bf6f767dc678",
+            "Value": {
+                "id": "36ce6ab4-e9ea-4fd5-8d9c-e4335e16094f",
+                "resourcePath": "objects\\oFrame\\oFrame.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "db2c4c00-d757-44c4-9566-4d73620d383c",
             "Value": {
                 "id": "4fc05c04-6202-4b2f-8af4-eb6aa7d0cd1f",
@@ -284,6 +340,14 @@
                 "id": "e1256756-c1a2-4caf-b5d0-81c0dd28a11c",
                 "resourcePath": "views\\e6453c70-0ddd-44f4-a37e-835f19ff4b69.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "f16bd821-e4a6-4b98-9e26-681b74926e94",
+            "Value": {
+                "id": "8673f039-2925-4dc4-8767-8d02cdc2d89c",
+                "resourcePath": "sprites\\sRedDrug1\\sRedDrug1.yy",
+                "resourceType": "GMSprite"
             }
         },
         {

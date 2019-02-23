@@ -8,3 +8,8 @@
 
 //object type
 #macro PLAIN_ 0
+#macro DRUG 1
+
+//item ID
+#macro BLUEDRUG  0
+#macro REDDRUG  1
