@@ -1,10 +1,7 @@
 hsp = 0;
 vsp = 0;
 jumpsp = 18;
-last_hsp = 0;
-last_vsp = 0;
-last_dir = 0; //direction before collide
-just_collided=0;//
+h_ground = 3;//to prove not fall down from plain
 
 h_acc = 1;
 hsp_max = 5;

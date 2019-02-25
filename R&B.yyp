@@ -397,11 +397,20 @@
                 "resourcePath": "sprites\\sBlackPlain\\sBlackPlain.yy",
                 "resourceType": "GMSprite"
             }
+        },
+        {
+            "Key": "f9823bc8-de03-4750-8ec1-168a11ad726a",
+            "Value": {
+                "id": "f775871d-782d-47b0-9a3a-f5e106819161",
+                "resourcePath": "scripts\\move2\\move2.yy",
+                "resourceType": "GMScript"
+            }
         }
     ],
     "script_order": [
         "7e4ec6e2-6e5d-4bdd-8e0a-3a2b1e0e3159",
         "22772fd7-6632-4ace-884b-c8b7627c1e94",
+        "f9823bc8-de03-4750-8ec1-168a11ad726a",
         "dadb49ed-d44c-4a74-b60a-964743b276ea"
     ],
     "tutorial": ""
