@@ -24,9 +24,9 @@ if hinput != 0 {
 var now_co_ins = instance_place(x, y, all);
 if(now_co_ins !=noone && now_co_ins.type_ == PLAIN_){
 	while(1){
-		x+= sign(x-now_co_ins.x);	
-		if !place_meeting(x,y,now_co_ins) break;
 		y+= sign(y-now_co_ins.y);	
+		if !place_meeting(x,y,now_co_ins) break;
+		x+= sign(x-now_co_ins.x);	
 		if !place_meeting(x,y,now_co_ins) break;
 	}
 }
@@ -53,4 +53,4 @@ if( v_co_ins != noone && v_co_ins.type_ == PLAIN_ && vsp!=0){
 //move
 x = clamp(x + hsp, 0, room_width);
 if (hsp !=0 ) image_xscale = sign(hsp);
-y += vsp;
+y += vsp + oGame.v_plain_fall/ room_speed;
