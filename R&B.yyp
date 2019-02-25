@@ -191,6 +191,14 @@
             }
         },
         {
+            "Key": "7e8c798d-6c5f-46d8-8c3b-71c033bb4a00",
+            "Value": {
+                "id": "b03b9b15-acf1-45c8-9340-1c8cfb69ba41",
+                "resourcePath": "fonts\\font0\\font0.yy",
+                "resourceType": "GMFont"
+            }
+        },
+        {
             "Key": "8ad2c34f-9db1-4c1d-840e-3aaf6d32c286",
             "Value": {
                 "id": "939aaea3-50a3-45a4-a01a-d30d2d0a7740",
@@ -236,6 +244,14 @@
                 "id": "3625ac3e-974c-427c-a788-024ea77cc9ca",
                 "resourcePath": "views\\a3ab3b87-6552-461c-bf6b-4cf02a7288c9.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "a5df35df-d2f5-4896-a524-b6b694f64b85",
+            "Value": {
+                "id": "ddec4a2e-ee2a-42f7-9723-e273fa8b6758",
+                "resourcePath": "objects\\oGame\\oGame.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -311,6 +327,14 @@
             }
         },
         {
+            "Key": "dadb49ed-d44c-4a74-b60a-964743b276ea",
+            "Value": {
+                "id": "e2b193f4-d959-4049-8023-294191741102",
+                "resourcePath": "scripts\\Plain_move\\Plain_move.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "db2c4c00-d757-44c4-9566-4d73620d383c",
             "Value": {
                 "id": "4fc05c04-6202-4b2f-8af4-eb6aa7d0cd1f",
@@ -377,7 +401,8 @@
     ],
     "script_order": [
         "7e4ec6e2-6e5d-4bdd-8e0a-3a2b1e0e3159",
-        "22772fd7-6632-4ace-884b-c8b7627c1e94"
+        "22772fd7-6632-4ace-884b-c8b7627c1e94",
+        "dadb49ed-d44c-4a74-b60a-964743b276ea"
     ],
     "tutorial": ""
 }

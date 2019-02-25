@@ -20,30 +20,30 @@ if hinput != 0 {
 	hsp = lerp(hsp,0,fric);
 }
 
+//if already overlapped with plain, separate them
+var now_co_ins = instance_place(x, y, all);
+if(now_co_ins !=noone && now_co_ins.type_ == PLAIN_){
+	while(1){
+		x+= sign(x-now_co_ins.x);	
+		if !place_meeting(x,y,now_co_ins) break;
+		y+= sign(y-now_co_ins.y);	
+		if !place_meeting(x,y,now_co_ins) break;
+	}
+}
 
-//update position
-
-//horizontal collision
+//horizontal collision in the future
 var h_co_ins = instance_place(x+hsp, y, all);
 if( h_co_ins !=noone && h_co_ins.type_ == PLAIN_ && hsp!=0){
-	last_hsp = hsp;//record speed before collide
-	while (place_meeting(x, y , h_co_ins)){//if already collided , separeate them
-		x-= sign(hsp);	
-	}
 	while !(place_meeting(x+ sign(hsp), y , h_co_ins)){
 		x+= sign(hsp);	
 	}
 	if( h_co_ins.cl!=MIX_ && cl !=h_co_ins.cl ) event_user(DEATH);
 	hsp = 0;	
 }
-//move
-//vertical collision
+
+//vertical collision in the future
 var v_co_ins = instance_place(x, y+vsp, all);
 if( v_co_ins != noone && v_co_ins.type_ == PLAIN_ && vsp!=0){
-	last_vsp = vsp;//record speed before collide
-	while (place_meeting(x, y , h_co_ins)){ //if already collided , separeate them
-		x-= sign(vsp);	
-	}
 	while !(place_meeting(x, y + sign(vsp), v_co_ins)){
 		y+= sign(vsp);	
 	}

@@ -15,3 +15,6 @@ fric = 0.3;
 cl=BLUE_;
 
 item_ = noone;
+
+y_record = 0;//height record
+y_actual = 0;//include plain falling
