@@ -11,15 +11,15 @@ max_v_plus = 300;
 
 //generate plain
 h_plain_group = 70;
-distance_plain_group = 140;//one group to another
+distance_plain_group = 150;//one group to another
 min_w_plain = 150;
-max_w_plain = 250;
+max_w_plain = 230;
 num_group = 20;
 num_plain_per_group = 4;
 latest_group_id = -1; //the id of group that just generated
 jump_distance_set = 180;
 x_rand_para = 0.3;//decide the degree of random of x, suggest[0,0.5]
-y_rand_para = 0.3;//decide the degree of random of y, suggest[0,0.5]
+y_rand_para = 0.4;//decide the degree of random of y, suggest[0,0.5]
 
 //generate item
 y_above_plain = 30;

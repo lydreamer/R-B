@@ -6,7 +6,10 @@ var now_co_with_plain = (now_co_ins != noone && now_co_ins.type_ ==PLAIN_);
 var v_co_ins = instance_place(x, y+1, all);
 if !(!now_co_with_plain && v_co_ins != noone && v_co_ins.type_ == PLAIN_){
 	vsp += global.grv;
-} 
+	isAir = true;
+} else{
+	isAir = false;	
+}
 //junp detect
 var v_co_ins = instance_place(x, y+5, all);
 if (v_co_ins != noone && v_co_ins.type_ == PLAIN_ && !place_meeting(x,y-h_ground,v_co_ins)){
@@ -20,7 +23,9 @@ var hinput = keyboard_check(ord("D")) - keyboard_check(ord("A"));
 if hinput != 0 {
 	hsp += hinput*h_acc;
 	hsp = clamp(hsp, -hsp_max,hsp_max);
-} else {
+} else if(isAir){
+	hsp = lerp(hsp,0,air_fric);
+} else{
 	hsp = lerp(hsp,0,fric);
 }
 

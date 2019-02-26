@@ -6,8 +6,10 @@ h_ground = 3;//to prove not fall down from plain
 h_acc = 1;
 hsp_max = 6;
 bouce = 0.2;
+isAir = true;
 
-fric = 0.3;
+fric = 0.2;
+air_fric = 0.05
 
 cl=BLUE_;
 
