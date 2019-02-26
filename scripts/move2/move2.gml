@@ -45,6 +45,6 @@ if(vsp>0){
 	}
 }
 //move
-x = clamp(x + hsp, 0+sprite_width/2, room_width-sprite_width/2);
+x = clamp(x + hsp, 0+abs(sprite_width)/2, room_width-abs(sprite_width)/2);
 if (hsp !=0 ) image_xscale = sign(hsp);
 y += vsp + oGame.v_plain_fall/ room_speed;

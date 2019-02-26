@@ -1,10 +1,10 @@
 hsp = 0;
 vsp = 0;
-jumpsp = 18;
+jumpsp = 20;
 h_ground = 3;//to prove not fall down from plain
 
 h_acc = 1;
-hsp_max = 5;
+hsp_max = 6;
 bouce = 0.2;
 
 fric = 0.3;
