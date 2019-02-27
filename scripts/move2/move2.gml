@@ -9,6 +9,7 @@ if !(!now_co_with_plain && v_co_ins != noone && v_co_ins.type_ == PLAIN_){
 	isAir = true;
 } else{
 	isAir = false;	
+	if( v_co_ins.cl!=MIX_ && cl !=v_co_ins.cl ) event_user(DEATH);
 }
 //junp detect
 var v_co_ins = instance_place(x, y+5, all);
@@ -42,10 +43,9 @@ if(vsp>0){
 		while(place_meeting(x,y,v_co_ins)){//if already collide ,but not collide when player go up by a short distance
 			y--;
 		}
-		while !(place_meeting(x, y + sign(vsp), v_co_ins)){
-			y+= sign(vsp);	
+		while !(place_meeting(x, y + 1, v_co_ins)){
+			y++;	
 		}
-		if( v_co_ins.cl!=MIX_ && cl !=v_co_ins.cl ) event_user(DEATH);
 		vsp = 0;	
 	}
 }

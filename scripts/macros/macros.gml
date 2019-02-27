@@ -1,4 +1,9 @@
+//player state
 #macro DEATH 0
+//game state
+#macro MENU 0
+#macro PLAY 1
+#macro RESULT 2
 
 //color
 #macro BLUE_ 0

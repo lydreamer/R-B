@@ -1,9 +1,8 @@
-/// @description Insert description here
+/// @description Play
 // You can write your code in this editor
 if(!instance_exists(oPlayer)) exit;
 v_plain_fall = clamp(oPlayer.y_record * fall_acc,v_plain_fall,max_v_plain_fall) + clamp((v_plus_y - oPlayer.y)/ v_plus_y, 0, 1)*max_v_plus;
 h_plain_fall +=  v_plain_fall / room_speed;
-
 //generate new plain group
 if (floor(oPlayer.y_record / distance_plain_group) > latest_group_id){
 	latest_group_id++;

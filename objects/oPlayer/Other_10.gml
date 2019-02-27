@@ -1,3 +1,2 @@
 /// @description Death
-
-instance_destroy(self);
+oState.game_state_ = RESULT;

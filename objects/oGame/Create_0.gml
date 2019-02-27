@@ -1,5 +1,7 @@
 /// @description Insert description here
-// You can write your code in this editor
+
+
+//all objects fall down
 h_plain_fall = 0;
 v_plain_fall = 0; // fall pixel per second
 max_v_plain_fall = 20;
@@ -8,7 +10,6 @@ fall_acc = 0.01;
 v_plain_fall_plus = 0; // acceleration because of y axis of player
 v_plus_y = 1000;
 max_v_plus = 300;
-
 //generate plain
 h_plain_group = 70;
 distance_plain_group = 150;//one group to another

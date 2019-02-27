@@ -79,6 +79,22 @@
             }
         },
         {
+            "Key": "1bd833d0-c268-4538-941f-71cc0a3ba4ff",
+            "Value": {
+                "id": "8446aa55-7c75-47d8-9685-e640a730b710",
+                "resourcePath": "fonts\\font_big\\font_big.yy",
+                "resourceType": "GMFont"
+            }
+        },
+        {
+            "Key": "1bdabefe-ebc6-4eda-8774-d05230b7fbc9",
+            "Value": {
+                "id": "9fbf25b3-e8ca-444f-b341-974f8bb2dadc",
+                "resourcePath": "sprites\\sPanelBackground\\sPanelBackground.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "22445606-018c-41c4-8fd5-1a116863e559",
             "Value": {
                 "id": "8a75a084-94bf-4a31-8882-18346c476622",
@@ -356,6 +372,14 @@
                 "id": "38fc6271-99b9-407d-920d-4dfb6df52bb5",
                 "resourcePath": "sprites\\sRedP\\sRedP.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "e475b1b5-b169-458a-b26a-20178862771a",
+            "Value": {
+                "id": "c011caaa-2fa1-4353-a43c-c2c00fb913b4",
+                "resourcePath": "objects\\oState\\oState.yy",
+                "resourceType": "GMObject"
             }
         },
         {

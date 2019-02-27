@@ -15,5 +15,7 @@ cl=BLUE_;
 
 item_ = noone;
 
+y_base = room_height - y;
 y_record = 0;//height record
 y_actual = 0;//include plain falling
+score_ = 0;
