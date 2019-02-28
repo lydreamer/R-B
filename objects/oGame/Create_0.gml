@@ -1,5 +1,6 @@
 /// @description Insert description here
 
+global.grv = 1;
 
 //all objects fall down
 h_plain_fall = 0;

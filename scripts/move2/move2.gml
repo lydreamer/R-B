@@ -13,12 +13,23 @@ if !(!now_co_with_plain && v_co_ins != noone && v_co_ins.type_ == PLAIN_){
 }
 //junp detect
 var v_co_ins = instance_place(x, y+5, all);
-if (v_co_ins != noone && v_co_ins.type_ == PLAIN_ && !place_meeting(x,y-h_ground,v_co_ins)){
-	if keyboard_check_pressed(vk_space){
-		vsp = -jumpsp;
+if (keyboard_check_pressed(vk_space) && !jumping && (v_co_ins != noone && v_co_ins.type_ == PLAIN_ && !place_meeting(x,y-h_ground,v_co_ins))){
+	jumping = true;
+	start_jump_T = get_timer();
+	show_debug_message("start jump"+string(start_jump_T));
+	vsp = -jumpsp;
+}
+if jumping {
+	var c_time = get_timer();
+	show_debug_message("c_time"+string(c_time));
+	if (keyboard_check_released(vk_space) || (c_time - start_jump_T) > max_jumpT * power(10,6)){
+		jumping = false;
+	}else if keyboard_check(vk_space){
+		vsp -= jumpacc ;
+		show_debug_message("vsp"+string(vsp));
+		
 	}
 }
-
 //move control
 var hinput = keyboard_check(ord("D")) - keyboard_check(ord("A"));
 if hinput != 0 {
