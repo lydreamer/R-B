@@ -12,8 +12,8 @@ bouce = 0.2;
 isAir = true;
 jumping = false;
 
-fric = 0.2;
-air_fric = 0.05
+fric = 0.25;
+air_fric = 0.03
 
 cl=BLUE_;
 
@@ -23,3 +23,6 @@ y_base = room_height - y;
 y_record = 0;//height record
 y_actual = 0;//include plain falling
 score_ = 0;
+
+shoot_CD = 0.2;
+shootT = 0;

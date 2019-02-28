@@ -24,9 +24,9 @@ x_rand_para = 0.3;//decide the degree of random of x, suggest[0,0.5]
 y_rand_para = 0.4;//decide the degree of random of y, suggest[0,0.5]
 
 //generate item
-y_above_plain = 50;
-h_item_rand = 10;
-x_item_rand_para = 0.3;
+y_above_plain = 60;
+h_item_rand = 20;
+x_item_rand_para = 0.4;
 
 //initialize plain data
 for (var i=0; i<num_group; i++) {

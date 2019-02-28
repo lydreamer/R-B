@@ -15,6 +15,8 @@
 #macro PLAYER -1
 #macro PLAIN_ 0
 #macro DRUG 1
+#macro BULLET 10
+
 
 //item ID
 #macro BLUEDRUG  0

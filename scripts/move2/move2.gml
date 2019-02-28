@@ -1,5 +1,4 @@
 ///player would not be collide with bottom of plain
-
 var now_co_ins = instance_place(x, y, all);
 var now_co_with_plain = (now_co_ins != noone && now_co_ins.type_ ==PLAIN_);
 //gravity
@@ -57,7 +56,7 @@ if(vsp>0){
 		while !(place_meeting(x, y + 1, v_co_ins)){
 			y++;	
 		}
-		vsp = 0;	
+		vsp = 0;
 	}
 }
 //move
