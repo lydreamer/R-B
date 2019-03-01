@@ -29,4 +29,4 @@ shootT = 0;
 
 invincible = false;//could not die
 invincibleT = 0;
-color_change_invincibleT = 1;
+color_change_invincibleT = 0.5;

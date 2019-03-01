@@ -28,6 +28,10 @@ y_above_plain = 60;
 h_item_rand = 20;
 x_item_rand_para = 0.4;
 
+//generate monster
+mon_num = 1;
+mon_add_per_group = 0.2;
+
 //initialize plain data
 for (var i=0; i<num_group; i++) {
     for (var j = 0; j < num_plain_per_group; j++) {

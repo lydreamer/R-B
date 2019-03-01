@@ -1,3 +1,3 @@
 /// @description Insert description here
 // You can write your code in this editor
-event_user(oState.game_state_);
+event_user(game_state_);

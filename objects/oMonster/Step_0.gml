@@ -13,13 +13,30 @@ switch (cl) {
         break;
 }
 
-//move. monster would rapidly correct its direction to chase the player, but it would acclerate slower when the direction of speed is correct
-target_dir = point_direction(x, y, oPlayer.x, oPlayer.y);
-acc_x = acc * (max_sp*cos(target_dir/180*pi)-hspeed);
-acc_y = acc * (max_sp*sin(target_dir/180*pi)-(-vspeed));
+if(state_ == CHASE){
+	event_user(CHASE);
+}else if(state_ == HIT){
+	alarm[0] = hit_stiff_t * room_speed;
+	state_ = STIFF;
+}
 
-vspeed -= acc_y;	
-hspeed += acc_x;	
+image_alpha = HP/HP_max;
+if HP ==0 instance_destroy();
 
-
-//speed = clamp(speed,0,max_sp);
+if(place_meeting(x,y,oPlayer)){
+	if(cl !=oPlayer.cl &&!oPlayer.invincible){
+		with(oPlayer) event_user(oPlayer);
+	}
+	else if (oPlayer.cl == cl){
+		if(abs(sign(oPlayer.vspeed)-sign(vspeed)) == 0){//test direction, if they are the same
+			vspeed = sign(vspeed)*max(abs(oPlayer.vspeed),abs(vspeed));
+		}else{
+			vspeed = -vspeed;
+		}
+		if(abs(sign(oPlayer.hspeed)-sign(hspeed)) == 0){//test direction, if they are the same
+			hspeed = sign(hspeed)*max(abs(oPlayer.hspeed),abs(hspeed));
+		}else{
+			hspeed = -hspeed;
+		}
+	}
+}
