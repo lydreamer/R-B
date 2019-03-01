@@ -71,6 +71,14 @@
             }
         },
         {
+            "Key": "1708f2b7-fda3-4d94-bf4d-189702279639",
+            "Value": {
+                "id": "628df3f9-d3ff-421f-8421-ca69c058f160",
+                "resourcePath": "objects\\oDrug\\oDrug.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "1a637a72-e301-4ec6-a0ad-28b2efad7c9a",
             "Value": {
                 "id": "1566ee92-6980-4799-940d-9e860917529f",
@@ -87,6 +95,14 @@
             }
         },
         {
+            "Key": "1bc8d960-8c9d-450f-81ef-5b3dad57eed5",
+            "Value": {
+                "id": "68d1b9da-1e40-4a53-ae46-2bdaebab6c51",
+                "resourcePath": "scripts\\move3\\move3.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "1bd833d0-c268-4538-941f-71cc0a3ba4ff",
             "Value": {
                 "id": "8446aa55-7c75-47d8-9685-e640a730b710",
@@ -100,6 +116,22 @@
                 "id": "9fbf25b3-e8ca-444f-b341-974f8bb2dadc",
                 "resourcePath": "sprites\\sPanelBackground\\sPanelBackground.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "1c189878-321f-455c-acbe-92596dd567c6",
+            "Value": {
+                "id": "d34b7722-5cbc-49b4-9165-7809dc002245",
+                "resourcePath": "objects\\oPlain\\oPlain.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "215fe379-97d9-49bc-b831-7d5cd6d7844f",
+            "Value": {
+                "id": "0d183cea-b565-43c5-8a6e-e500c72cf3d4",
+                "resourcePath": "objects\\oMonster\\oMonster.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -132,6 +164,14 @@
                 "id": "18a9b670-fc89-4dcd-98df-b50d145210b5",
                 "resourcePath": "objects\\oBlueDrug\\oBlueDrug.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "331e7a10-14cb-41c9-a990-70b90f40486e",
+            "Value": {
+                "id": "abf0f1ab-434f-4e75-9620-59bc1b4424dc",
+                "resourcePath": "sprites\\sBlueM\\sBlueM.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -191,10 +231,18 @@
             }
         },
         {
+            "Key": "5f8d471d-5026-49a4-8613-bf177494d3a2",
+            "Value": {
+                "id": "2bcdf97d-573a-43b9-84b4-b495f786aa4c",
+                "resourcePath": "sprites\\sRedM\\sRedM.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "6cb3a9c3-abe2-4e14-8c4f-cbe8471c3d6a",
             "Value": {
                 "id": "bf77421b-0153-4a1f-a522-512970603b43",
-                "resourcePath": "sprites\\sRBPlain\\sRBPlain.yy",
+                "resourcePath": "sprites\\sMixPlain\\sMixPlain.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -418,7 +466,7 @@
             "Key": "f16bd821-e4a6-4b98-9e26-681b74926e94",
             "Value": {
                 "id": "8673f039-2925-4dc4-8767-8d02cdc2d89c",
-                "resourcePath": "sprites\\sRedDrug1\\sRedDrug1.yy",
+                "resourcePath": "sprites\\sRedDrug\\sRedDrug.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -459,6 +507,7 @@
         "7e4ec6e2-6e5d-4bdd-8e0a-3a2b1e0e3159",
         "22772fd7-6632-4ace-884b-c8b7627c1e94",
         "f9823bc8-de03-4750-8ec1-168a11ad726a",
+        "1bc8d960-8c9d-450f-81ef-5b3dad57eed5",
         "dadb49ed-d44c-4a74-b60a-964743b276ea"
     ],
     "tutorial": ""

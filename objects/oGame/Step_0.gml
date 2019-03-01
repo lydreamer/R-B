@@ -28,20 +28,23 @@ if (floor(oPlayer.y_record / distance_plain_group) > latest_group_id){
 				show_debug_message("y:"+string(new_plain_y[unrepeated_group_id,i]));
 				//show_debug_message("w"+string(random_range(min_w_plain, max_w_plain)));
 				new_plain_cl[unrepeated_group_id,i] = irandom(2);
-				switch (new_plain_cl[unrepeated_group_id,i]) {
-				    case RED_:
-						new_plain_id[unrepeated_group_id,i] = instance_create_layer(new_plain_x[unrepeated_group_id,i], new_plain_y[unrepeated_group_id,i],"Plain",oRedPlain);
-				        break;
-				    case BLUE_:
-						new_plain_id[unrepeated_group_id,i] = instance_create_layer(new_plain_x[unrepeated_group_id,i], new_plain_y[unrepeated_group_id,i],"Plain",oBluePlain);
-				        break;
-				    case MIX_:
-						new_plain_id[unrepeated_group_id,i] = instance_create_layer(new_plain_x[unrepeated_group_id,i], new_plain_y[unrepeated_group_id,i],"Plain",oRBPlain);
-				        break;
-				    default:
-				        // code here
-				        break;
-				}
+				
+				new_plain_id[unrepeated_group_id,i] = instance_create_layer(new_plain_x[unrepeated_group_id,i], new_plain_y[unrepeated_group_id,i],"Plain",oPlain);
+				new_plain_id[unrepeated_group_id,i].cl = new_plain_cl[unrepeated_group_id,i];
+				//switch (new_plain_cl[unrepeated_group_id,i]) {
+				//    case RED_:
+				//		new_plain_id[unrepeated_group_id,i] = instance_create_layer(new_plain_x[unrepeated_group_id,i], new_plain_y[unrepeated_group_id,i],"Plain",oRedPlain);
+				//        break;
+				//    case BLUE_:
+				//		new_plain_id[unrepeated_group_id,i] = instance_create_layer(new_plain_x[unrepeated_group_id,i], new_plain_y[unrepeated_group_id,i],"Plain",oBluePlain);
+				//        break;
+				//    case MIX_:
+				//		new_plain_id[unrepeated_group_id,i] = instance_create_layer(new_plain_x[unrepeated_group_id,i], new_plain_y[unrepeated_group_id,i],"Plain",oRBPlain);
+				//        break;
+				//    default:
+				//        // code here
+				//        break;
+				//}
 				new_plain_id[unrepeated_group_id,i].image_xscale = new_plain_w[unrepeated_group_id,i] / new_plain_id[unrepeated_group_id,i].sprite_width;
 				//overlap test
 				overlap_test = false; //suggest that is not overlaped
@@ -81,17 +84,9 @@ if (floor(oPlayer.y_record / distance_plain_group) > latest_group_id){
 		new_item_type[unrepeated_group_id] = DRUG;
 		new_item_x[unrepeated_group_id] = new_plain_x[unrepeated_group_id, plain_id_in_group] + new_plain_w[unrepeated_group_id, plain_id_in_group] * random_range(-1,1) * x_item_rand_para;
 		new_item_y[unrepeated_group_id] = new_plain_y[unrepeated_group_id, plain_id_in_group] - y_above_plain + random_range(-1,1)*h_item_rand;
-		new_item_cl[unrepeated_group_id] = irandom(1);;
-		switch (new_item_cl[unrepeated_group_id]) {
-		    case BLUEDRUG:
-				new_item_id[unrepeated_group_id] = instance_create_layer(new_item_x[unrepeated_group_id], new_item_y[unrepeated_group_id],"Item",oBlueDrug);
-		        break;
-		    case REDDRUG:
-				new_item_id[unrepeated_group_id] = instance_create_layer(new_item_x[unrepeated_group_id], new_item_y[unrepeated_group_id],"Item",oRedDrug);
-		        break;
-		    default:
-		        break;
-		}
+		new_item_cl[unrepeated_group_id] = irandom(1);
+		new_item_id[unrepeated_group_id] = instance_create_layer(new_item_x[unrepeated_group_id], new_item_y[unrepeated_group_id],"Item",oDrug);
+		new_item_id[unrepeated_group_id].cl = new_item_cl[unrepeated_group_id];
 		var item_overlap_test_obj = instance_place(new_item_x[unrepeated_group_id],new_item_y[unrepeated_group_id],all);
 		if !(item_overlap_test_obj!=noone && (item_overlap_test_obj.type_ ==PLAIN_ || item_overlap_test_obj.type_ ==DRUG)) item_overlap_test = true;
 	}

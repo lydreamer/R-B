@@ -3,7 +3,7 @@
 cl = noone;
 vsp = 0;
 hsp = 0;
-speed = 5;
-lifeT = 2;
-createT = get_timer();
+speed = 10;
+lifeT = 3;
+alarm[0] = lifeT * room_speed;//life time
 type_ = BULLET;

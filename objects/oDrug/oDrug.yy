@@ -1,68 +1,48 @@
 {
-    "id": "9ce742d0-ca15-4994-b693-70fadd909fae",
+    "id": "1708f2b7-fda3-4d94-bf4d-189702279639",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "oBullet",
+    "name": "oDrug",
     "eventList": [
         {
-            "id": "14ac891e-4924-4ba4-9870-706653935fc5",
+            "id": "974181c3-5b04-4c04-ae77-ffecdae98f1a",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
             "eventtype": 0,
-            "m_owner": "9ce742d0-ca15-4994-b693-70fadd909fae"
+            "m_owner": "1708f2b7-fda3-4d94-bf4d-189702279639"
         },
         {
-            "id": "493271e7-0310-4512-97fa-1403ebd32366",
+            "id": "ba01752c-6d8d-4bb3-a56a-3c4e36ff0775",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "collisionObjectId": "c59b82ae-d3f2-46e6-8a33-25722d30fef2",
             "enumb": 0,
-            "eventtype": 8,
-            "m_owner": "9ce742d0-ca15-4994-b693-70fadd909fae"
+            "eventtype": 4,
+            "m_owner": "1708f2b7-fda3-4d94-bf4d-189702279639"
         },
         {
-            "id": "accbbb80-3716-4635-89de-c69cb054c154",
+            "id": "98d288d3-6be6-4691-b9fa-9ce214da86f3",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
             "eventtype": 3,
-            "m_owner": "9ce742d0-ca15-4994-b693-70fadd909fae"
+            "m_owner": "1708f2b7-fda3-4d94-bf4d-189702279639"
         },
         {
-            "id": "36062347-9e52-41a0-8fae-ddaa5c162fdb",
+            "id": "a4ee68ec-8228-4289-b2a2-7ce871e3dd7f",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "db2c4c00-d757-44c4-9566-4d73620d383c",
             "enumb": 0,
             "eventtype": 4,
-            "m_owner": "9ce742d0-ca15-4994-b693-70fadd909fae"
-        },
-        {
-            "id": "87708b80-0de4-43f5-8c43-9f9feb38dc57",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "1c189878-321f-455c-acbe-92596dd567c6",
-            "enumb": 0,
-            "eventtype": 4,
-            "m_owner": "9ce742d0-ca15-4994-b693-70fadd909fae"
-        },
-        {
-            "id": "ba126318-be1c-416b-9d69-88c200eefca7",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 0,
-            "eventtype": 2,
-            "m_owner": "9ce742d0-ca15-4994-b693-70fadd909fae"
+            "m_owner": "1708f2b7-fda3-4d94-bf4d-189702279639"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
@@ -83,6 +63,6 @@
     "physicsStartAwake": true,
     "properties": null,
     "solid": false,
-    "spriteId": "021e94e6-8c74-40ad-99b8-1c0aa1fd0db9",
+    "spriteId": "4e15123e-18e7-4ee0-a7db-82857289ade7",
     "visible": true
 }

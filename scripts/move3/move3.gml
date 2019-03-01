@@ -1,18 +1,18 @@
 ///player would not be collide with bottom of plain
-var now_co_ins = instance_place(x, y, all);
-var now_co_with_plain = (now_co_ins != noone && now_co_ins.type_ ==PLAIN_);
+var now_co_ins = instance_place(x, y, oPlain);
+var now_co_with_plain = (now_co_ins != noone);
 //gravity
-var v_co_ins = instance_place(x, y+1, all);
-if !(!now_co_with_plain && v_co_ins != noone && v_co_ins.type_ == PLAIN_){
+var v_co_ins = instance_place(x, y+1, oPlain);
+if !(!now_co_with_plain && v_co_ins != noone){
 	vsp += global.grv;
 	isAir = true;
 } else{
 	isAir = false;	
-	if( v_co_ins.cl!=MIX_ && cl !=v_co_ins.cl ) event_user(DEATH);
+	if( v_co_ins.cl!=MIX_ && cl !=v_co_ins.cl &&!invincible) event_user(DEATH);
 }
 //junp detect
-var v_co_ins = instance_place(x, y+5, all);
-if (keyboard_check_pressed(vk_space) && !jumping && (v_co_ins != noone && v_co_ins.type_ == PLAIN_ && !place_meeting(x,y-h_ground,v_co_ins))){
+var v_co_ins = instance_place(x, y+5, oPlain);
+if (keyboard_check_pressed(vk_space) && !jumping && (v_co_ins != noone  && !place_meeting(x,y-h_ground,v_co_ins))){
 	jumping = true;
 	start_jump_T = get_timer();
 	show_debug_message("start jump"+string(start_jump_T));
@@ -42,18 +42,18 @@ if hinput != 0 {
 
 
 //horizontal collision in the future
-if( now_co_with_plain && now_co_ins.cl!=MIX_ && cl !=now_co_ins.cl){
+if( now_co_with_plain && now_co_ins.cl!=MIX_ && cl !=now_co_ins.cl &&!invincible){
 	event_user(DEATH);
 }
 
 //vertical collision in the future
 if(vsp>0){
 	var v_co_ins_list = ds_list_create();
-	instance_place_list(x, y+vsp, all,v_co_ins_list,false);
+	instance_place_list(x, y+vsp, oPlain ,v_co_ins_list,false);
 	for(var i=0;i<ds_list_size(v_co_ins_list);i++){
 		//var v_co_ins = instance_place(x, y+vsp, all);
 		var v_co_ins = v_co_ins_list[| i];
-		if( v_co_ins != noone && v_co_ins.type_ == PLAIN_ && !place_meeting(x,y-h_ground,v_co_ins)){
+		if( v_co_ins != noone  && !place_meeting(x,y-h_ground,v_co_ins)){
 			while(place_meeting(x,y,v_co_ins)){//if already collide ,but not collide when player go up by a short distance
 				y--;
 			}

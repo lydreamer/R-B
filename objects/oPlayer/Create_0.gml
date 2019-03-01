@@ -26,3 +26,7 @@ score_ = 0;
 
 shoot_CD = 0.2;
 shootT = 0;
+
+invincible = false;//could not die
+invincibleT = 0;
+color_change_invincibleT = 1;
