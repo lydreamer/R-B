@@ -1,8 +1,7 @@
 /// @description Change color
-if(item_!=noone){
-	cl = item_.cl;
-	item_ = noone;
-	instance_destroy(item_);
+if(color_change_state){
+	cl = 1-cl;
 	invincible = true;
 	alarm[0] = color_change_invincibleT * room_speed;
+	color_change_state = false;
 }

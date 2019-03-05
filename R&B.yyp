@@ -509,6 +509,14 @@
                 "resourcePath": "scripts\\move2\\move2.yy",
                 "resourceType": "GMScript"
             }
+        },
+        {
+            "Key": "fd79941b-eccb-4830-b455-097de71b20c7",
+            "Value": {
+                "id": "c7cf1dc6-57f0-4c23-9043-df8304dc999c",
+                "resourcePath": "sprites\\sColorDrug\\sColorDrug.yy",
+                "resourceType": "GMSprite"
+            }
         }
     ],
     "script_order": [

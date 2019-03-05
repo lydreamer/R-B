@@ -28,5 +28,7 @@ shoot_CD = 0.2;
 shootT = 0;
 
 invincible = false;//could not die
-invincibleT = 0;
 color_change_invincibleT = 0.5;
+color_change_CD = 3;
+color_change_T = 0;
+color_change_state = true;

@@ -12,6 +12,7 @@ v_plain_fall_plus = 0; // acceleration because of y axis of player
 v_plus_y = 1000;
 max_v_plus = 300;
 //generate plain
+y_plain_start = 1200;
 h_plain_group = 70;
 distance_plain_group = 150;//one group to another
 min_w_plain = 150;
@@ -19,7 +20,7 @@ max_w_plain = 230;
 num_group = 20;
 num_plain_per_group = 4;
 latest_group_id = -1; //the id of group that just generated
-jump_distance_set = 180;
+jump_distance_set = 190;
 x_rand_para = 0.3;//decide the degree of random of x, suggest[0,0.5]
 y_rand_para = 0.4;//decide the degree of random of y, suggest[0,0.5]
 
@@ -30,7 +31,7 @@ x_item_rand_para = 0.4;
 
 //generate monster
 mon_num = 1;
-mon_add_per_group = 0.2;
+mon_add_per_group = 0.1;
 
 //initialize plain data
 for (var i=0; i<num_group; i++) {
