@@ -62,18 +62,18 @@ if (floor(oPlayer.y_record / distance_plain_group) > latest_group_id){
 		}
 	}
 	//generate item
-	//var item_overlap_test = false;
-	//while(!item_overlap_test){
-	//	if(instance_exists(new_item_id[unrepeated_group_id])) instance_destroy(new_item_id[unrepeated_group_id]);
-	//	var plain_id_in_group = floor(random(num_plain_per_group));
-	//	new_item_type[unrepeated_group_id] = DRUG;
-	//	new_item_x[unrepeated_group_id] = new_plain_x[unrepeated_group_id, plain_id_in_group] + new_plain_w[unrepeated_group_id, plain_id_in_group] * random_range(-1,1) * x_item_rand_para;
-	//	new_item_y[unrepeated_group_id] = new_plain_y[unrepeated_group_id, plain_id_in_group] - y_above_plain + random_range(-1,1)*h_item_rand;
-	//	new_item_cl[unrepeated_group_id] = irandom(1);
-	//	new_item_id[unrepeated_group_id] = instance_create_layer(new_item_x[unrepeated_group_id], new_item_y[unrepeated_group_id],"Item",oDrug);
-	//	new_item_id[unrepeated_group_id].cl = new_item_cl[unrepeated_group_id];
-	//	item_overlap_test = !place_meeting(new_item_x[unrepeated_group_id],new_item_y[unrepeated_group_id],oPlain) && !place_meeting(new_item_x[unrepeated_group_id],new_item_y[unrepeated_group_id],oDrug);
-	//}
+	var item_overlap_test = false;
+	while(!item_overlap_test){
+		if(instance_exists(new_item_id[unrepeated_group_id])) instance_destroy(new_item_id[unrepeated_group_id]);
+		var plain_id_in_group = floor(random(num_plain_per_group));
+		//new_item_type[unrepeated_group_id] = DRUG;
+		new_item_x[unrepeated_group_id] = new_plain_x[unrepeated_group_id, plain_id_in_group] + new_plain_w[unrepeated_group_id, plain_id_in_group] * random_range(-1,1) * x_item_rand_para;
+		new_item_y[unrepeated_group_id] = new_plain_y[unrepeated_group_id, plain_id_in_group] - y_above_plain + random_range(-1,1)*h_item_rand;
+		new_item_cl[unrepeated_group_id] = irandom(1);
+		new_item_id[unrepeated_group_id] = instance_create_layer(new_item_x[unrepeated_group_id], new_item_y[unrepeated_group_id],"Item",oInvin);
+		new_item_id[unrepeated_group_id].cl = new_item_cl[unrepeated_group_id];
+		item_overlap_test = !place_meeting(new_item_x[unrepeated_group_id],new_item_y[unrepeated_group_id],oPlain) && !place_meeting(new_item_x[unrepeated_group_id],new_item_y[unrepeated_group_id],oSuper);
+	}
 	//generate monster
 	repeat(floor(mon_num)){
 		var newMon_x = irandom(room_width);

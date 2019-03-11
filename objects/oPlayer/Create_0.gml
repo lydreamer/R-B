@@ -32,3 +32,7 @@ color_change_invincibleT = 0.5;
 color_change_CD = 3;
 color_change_T = 0;
 color_change_state = true;
+
+//buff lasting time
+invin_buff = 0;
+super_buff = 0;

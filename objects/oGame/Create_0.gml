@@ -4,7 +4,7 @@ global.grv = 1;
 
 //all objects fall down
 h_plain_fall = 0;
-v_plain_fall = 1; // fall pixel per second
+v_plain_fall = 2; // fall pixel per second
 max_v_plain_fall = 20;
 fall_acc = 0.01;
 
