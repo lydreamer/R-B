@@ -12,7 +12,7 @@ bouce = 0.2;
 isAir = true;
 jumping = false;
 
-fric = 0.25;
+fric = 0.3;
 air_fric = 0.03
 
 cl=BLUE_;
@@ -26,6 +26,8 @@ score_ = 0;
 
 shoot_CD = 0.2;
 shootT = 0;
+shoot_point_x = x;
+shoot_point_y = y;
 
 invincible = false;//could not die
 color_change_invincibleT = 0.5;
@@ -35,4 +37,6 @@ color_change_state = true;
 
 //buff lasting time
 invin_buff = 0;
+invin_lastingT = 5;
 super_buff = 0;
+super_lastingT = 5;

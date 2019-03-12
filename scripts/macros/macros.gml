@@ -20,9 +20,9 @@
 #macro MONSTER 11
 
 
-//item ID
-#macro BLUEDRUG  0
-#macro REDDRUG  1
+//buff ID
+#macro INVIN  0
+#macro SUPER  1
 
 //monster state
 #macro CHASE  0

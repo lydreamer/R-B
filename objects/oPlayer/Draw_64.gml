@@ -14,7 +14,7 @@ var buff1_frame_y = oCamera.camera_h*0.8;
 draw_sprite(sFrame,0,buff1_frame_x, buff1_frame_y);
 draw_sprite(sInvin,0,buff1_frame_x, buff1_frame_y);	
 if (invin_buff>0){
-	draw_frame(buff1_frame_x,buff1_frame_y,oInvin.lastingT - invin_buff,oInvin.lastingT,c_green)
+	draw_frame(buff1_frame_x,buff1_frame_y,invin_lastingT - invin_buff,invin_lastingT,c_green)
 }
 //buff2 - super bomb
 var buff2_frame_x = oCamera.camera_w * 0.7;
@@ -22,7 +22,7 @@ var buff2_frame_y = oCamera.camera_h*0.8;
 draw_sprite(sFrame,0,buff2_frame_x, buff2_frame_y);
 draw_sprite(sSuper,0,buff2_frame_x, buff2_frame_y);	
 if (super_buff>0){
-	draw_frame(buff2_frame_x,buff2_frame_y,oInvin.lastingT - super_buff,oSuper.lastingT,c_green)
+	draw_frame(buff2_frame_x,buff2_frame_y,super_lastingT - super_buff,super_lastingT,c_green)
 }
 
 //draw item icon

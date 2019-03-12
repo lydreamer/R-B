@@ -69,10 +69,13 @@ if (floor(oPlayer.y_record / distance_plain_group) > latest_group_id){
 		//new_item_type[unrepeated_group_id] = DRUG;
 		new_item_x[unrepeated_group_id] = new_plain_x[unrepeated_group_id, plain_id_in_group] + new_plain_w[unrepeated_group_id, plain_id_in_group] * random_range(-1,1) * x_item_rand_para;
 		new_item_y[unrepeated_group_id] = new_plain_y[unrepeated_group_id, plain_id_in_group] - y_above_plain + random_range(-1,1)*h_item_rand;
-		new_item_cl[unrepeated_group_id] = irandom(1);
-		new_item_id[unrepeated_group_id] = instance_create_layer(new_item_x[unrepeated_group_id], new_item_y[unrepeated_group_id],"Item",oInvin);
-		new_item_id[unrepeated_group_id].cl = new_item_cl[unrepeated_group_id];
-		item_overlap_test = !place_meeting(new_item_x[unrepeated_group_id],new_item_y[unrepeated_group_id],oPlain) && !place_meeting(new_item_x[unrepeated_group_id],new_item_y[unrepeated_group_id],oSuper);
+		new_item_buffid[unrepeated_group_id] = irandom(3); // decide which type is the buff
+		if(new_item_buffid[unrepeated_group_id] == INVIN){
+			new_item_id[unrepeated_group_id] = instance_create_layer(new_item_x[unrepeated_group_id], new_item_y[unrepeated_group_id],"Item",oInvin);
+		}else if (new_item_buffid[unrepeated_group_id] == SUPER){
+			new_item_id[unrepeated_group_id] = instance_create_layer(new_item_x[unrepeated_group_id], new_item_y[unrepeated_group_id],"Item",oSuper);
+		}
+		item_overlap_test = !place_meeting(new_item_x[unrepeated_group_id],new_item_y[unrepeated_group_id],oPlain);
 	}
 	//generate monster
 	repeat(floor(mon_num)){

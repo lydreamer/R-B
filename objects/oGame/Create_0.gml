@@ -4,9 +4,9 @@ global.grv = 1;
 
 //all objects fall down
 h_plain_fall = 0;
-v_plain_fall = 2; // fall pixel per second
-max_v_plain_fall = 20;
-fall_acc = 0.01;
+v_plain_fall = 10; // fall pixel per second
+max_v_plain_fall = 100;
+fall_acc = 0.03;
 
 v_plain_fall_plus = 0; // acceleration because of y axis of player
 v_plus_y = 1000;
@@ -46,7 +46,7 @@ for (var i=0; i<num_group; i++) {
 	new_item_type[i] = DRUG;
 	new_item_x[i] = 0;
 	new_item_y[i] = 0;
-	new_item_cl[i] = noone;
+	new_item_buffid[i] = noone;
 }
 
 show_debug_message("Begin"+string(latest_group_id));
