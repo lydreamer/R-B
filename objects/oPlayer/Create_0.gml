@@ -30,8 +30,8 @@ shoot_point_x = x;
 shoot_point_y = y;
 
 invincible = false;//could not die
-color_change_invincibleT = 0.5;
-color_change_CD = 3;
+color_change_invincibleT = 0.3;
+color_change_CD = 1;
 color_change_T = 0;
 color_change_state = true;
 
